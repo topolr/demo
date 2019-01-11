@@ -12,20 +12,12 @@ import ListService from "./state.js";
 class List extends View {
 	@binder("check")
 	check({item}) {
-		if (!this.getParent()) {
-			this.commit("check", item);
-		} else {
-			this.dispatchEvent("check", item);
-		}
+		this.dispatchEvent("check", item);
 	}
 
 	@binder("remove")
 	remove({item}) {
-		if (!this.getParent()) {
-			this.commit("remove", item);
-		} else {
-			this.dispatchEvent("remove", item);
-		}
+		this.dispatchEvent("remove", item);
 	}
 }
 

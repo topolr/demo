@@ -1,6 +1,6 @@
 import {view, ViewGroup} from "adajs";
 import SsrService from "./state.js";
-import List from "./../list";
+import List from "./../listc";
 
 @view({
 	className: "ssr",
