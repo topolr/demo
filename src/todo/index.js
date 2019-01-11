@@ -1,4 +1,4 @@
-import {view, ViewGroup, binder, handler} from "adajs";
+import {view, ViewGroup, binder, handler, TransactDataSet} from "adajs";
 import TodoService from "./state.js";
 import List from "./list";
 
@@ -7,12 +7,17 @@ import List from "./list";
 	template: "./template.html",
 	style: "./style.scss",
 	dataset: {
-		service: TodoService
+		service: TodoService,
+		type: TransactDataSet
 	}
 })
 class Todo extends ViewGroup {
 	tags() {
 		return {list: List};
+	}
+
+	oncommited() {
+		this.dispatchEvent('change');
 	}
 
 	@binder("checkAll")
