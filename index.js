@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 		origin: "http://localhost:8080",
 		distPath
 	});
-	renderer.outputStream("/").pipe(res);
+	renderer.outputStream(req.path).pipe(res);
 });
 
 module.exports = app;
