@@ -17,12 +17,12 @@
     "url": "https://gitee.com/adajs/page.git"
   },
   "keywords": [
-    "adajs",
+    "adajs"
   ],
   "author": "WangJinliang (hou80houzhu)",
   "license": "MIT",
   "dependencies": {
-    "adajs": "^3.0.0-beta.22"
+    "adajs": "^3.0.0-beta.23"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",

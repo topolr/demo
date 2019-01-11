@@ -1,0 +1,13 @@
+{{list data.list as item}}
+    <div class="item" uid="{{ item.id }}">
+        <div class="checkbox" onclick="{{ check(item) }}">
+            {{if item.check}}
+            <i class=":pmk-check_box"></i>
+            {{else}}
+            <i class=":pmk-check_box_outline_blank"></i>
+            {{/if}}
+        </div>
+        <div class="title">{{ item.title }}</div>
+        <div class="remove" onclick="{{ remove(item) }}"><i class=":pmk-close"></i></div>
+    </div>
+{{/list}}

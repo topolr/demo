@@ -1,0 +1,13 @@
+<div class="header">
+    <div class="check" onclick="{{ checkAll() }}">
+        {{if data.checkAll}}
+        <i class=":pmk-check_box"></i>
+        {{else}}
+        <i class=":pmk-check_box_outline_blank"></i>
+        {{/if}}
+    </div>
+    <div class="input"><input type="text" placeholder="Input something" onkeyup="{{ add() }}"/></div>
+</div>
+<div class="list">
+    <list @parameter="{{ data.list }}"/>
+</div>

@@ -1,0 +1,25 @@
+.list {
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  .item {
+    display: flex;
+    line-height: 35px;
+    border-bottom: 1px solid #D7D7D7;
+    .checkbox {
+      text-align: center;
+      width: 35px;
+    }
+    .title {
+      flex: 1;
+    }
+    .remove {
+      width: 35px;
+      text-align: center;
+    }
+  }
+}
