@@ -1,15 +1,15 @@
 import {view,ViewGroup} from "adajs";
-import InteractiveService from "./state.js";
+import CommunicateService from "./state.js";
 
 @view({
-    className:"interactive",
+    className:"communicate",
     template:"./template.html",
     style:"./style.scss",
     dataset:{
-    	service:InteractiveService
+    	service:CommunicateService
     }
 })
-class Interactive extends ViewGroup{
+class Communicate extends ViewGroup{
 }
 
-export default Interactive;
+export default Communicate;
