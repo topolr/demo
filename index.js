@@ -6,12 +6,12 @@ const distPath = Path.resolve(__dirname, "./dist");
 
 let app = new express();
 
-app.get("/", (req, res) => {
-	let renderer = new DistSteamRenderer({
-		origin: "http://localhost:8080",
-		distPath
-	});
-	renderer.outputStream(req.path).pipe(res);
-});
+// app.get("/", (req, res) => {
+// 	let renderer = new DistSteamRenderer({
+// 		origin: "http://localhost:8080",
+// 		distPath
+// 	});
+// 	renderer.outputStream(req.path).pipe(res);
+// });
 
 module.exports = app;
