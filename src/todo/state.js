@@ -31,14 +31,22 @@ class TodoService extends Service {
 	check(current, item) {
 		let target = current.list.find(_item => _item.id === item.id);
 		target.check = !target.check;
-		current.checkAll = current.list.find(_item => _item.check === false) === undefined;
+		if (current.list.length > 0) {
+			current.checkAll = current.list.find(_item => _item.check === false) === undefined;
+		} else {
+			current.checkAll = false;
+		}
 	}
 
 	@action("remove")
 	remove(current, item) {
 		let index = current.list.findIndex(_item => _item.id === item.id);
 		current.list.splice(index, 1);
-		current.checkAll = current.list.find(_item => _item.check === false) === undefined;
+		if (current.list.length > 0) {
+			current.checkAll = current.list.find(_item => _item.check === false) === undefined;
+		} else {
+			current.checkAll = false;
+		}
 	}
 }
 

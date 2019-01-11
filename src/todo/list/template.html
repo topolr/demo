@@ -1,4 +1,5 @@
-{{list data.list as item}}
+{{if data.list.length>0}}
+    {{list data.list as item}}
     <div class="item" uid="{{ item.id }}">
         <div class="checkbox" onclick="{{ check(item) }}">
             {{if item.check}}
@@ -10,4 +11,10 @@
         <div class="title">{{ item.title }}</div>
         <div class="remove" onclick="{{ remove(item) }}"><i class=":pmk-close"></i></div>
     </div>
-{{/list}}
+    {{/list}}
+{{else}}
+<div class="noitems">
+    <div class="icon"><i class=":pmk-date_range"></i></div>
+    <div class="desc">no records</div>
+</div>
+{{/if}}
