@@ -1,0 +1,36 @@
+.reactive {
+  .name {
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+  }
+  .input {
+    line-height: 35px;
+    padding: 0 10px 0 10px;
+    border: 1px solid #D7D7D7;
+    margin:0 10px 0 10px;
+    background:white;
+    border-radius: 5px;
+    input {
+      height: 35px;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      width: 100%;
+      outline: none;
+      border: 0;
+    }
+  }
+  .btns {
+    line-height: 35px;
+    padding: 10px;
+    .btn {
+      display: inline-block;
+      padding: 0 20px 0 20px;
+      color: white;
+      background: #2A335F;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  }
+}
