@@ -1,0 +1,57 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "adajs demo",
+  "main": "index.js",
+  "scripts": {
+    "ada": "node node_modules/.bin/adajs",
+    "pack": "node node_modules/.bin/ada-pack",
+    "dev": "node node_modules/.bin/ada-pack dev"
+  },
+  "ada": {
+    "develop": "./app.js",
+    "publish": "./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/adajs/page.git"
+  },
+  "keywords": [
+    "adajs",
+  ],
+  "author": "WangJinliang (hou80houzhu)",
+  "license": "MIT",
+  "dependencies": {
+    "adajs": "^3.0.0-beta.22"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-export-extensions": "^7.0.0-beta.32",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-typescript": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.1.5",
+    "@babel/runtime-corejs2": "^7.1.5",
+    "ada-pack": "^3.0.0-beta.9",
+    "autoprefixer": "^9.3.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "html-minifier": "^3.5.21",
+    "less": "^3.8.1",
+    "nedb-promise": "^2.0.1",
+    "node-sass": "^4.10.0",
+    "postcss": "^7.0.6",
+    "uglify-es": "^3.3.9",
+    "uglifycss": "0.0.29"
+  }
+}
