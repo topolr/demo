@@ -1,6 +1,6 @@
 import {view, ViewGroup, binder, handler, TransactDataSet} from "adajs";
 import TodoService from "./state.js";
-import List from "./list";
+import List from "../list";
 
 @view({
 	className: "todo",
