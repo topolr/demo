@@ -6,18 +6,20 @@ import Todo from "./todo";
 import TimeTravel from "./timetravel";
 import SSR from "./ssr";
 import Reactive from "./reactive";
+import Communicate from "./communicate";
 
 @root()
 class Root extends StaticViewGroup {
-	oncreated() {
-		// this.addChild(List, {
-		// 	parameter: [{id: "1", title: 'a'}]
-		// });
-		// this.addChild(Todo);
-		// this.addChild(TimeTravel);
-		// this.addChild(SSR);
-		this.addChild(Reactive);
-	}
+    oncreated() {
+        // this.addChild(List, {
+        // 	parameter: [{id: "1", title: 'a'}]
+        // });
+        // this.addChild(Todo);
+        // this.addChild(TimeTravel);
+        // this.addChild(SSR);
+        // this.addChild(Reactive);
+        this.addChild(Communicate);
+    }
 }
 
 export default Root;
