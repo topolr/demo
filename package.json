@@ -22,7 +22,7 @@
   "author": "WangJinliang (hou80houzhu)",
   "license": "MIT",
   "dependencies": {
-    "adajs": "^3.0.0-beta.25"
+    "adajs": "^3.0.0-beta.26"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
