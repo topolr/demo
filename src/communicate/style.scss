@@ -5,19 +5,21 @@
   right: 0;
   bottom: 0;
 
-  .list {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
+  .section {
     height: 50%;
-  }
+    position: relative;
 
-  .container {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    right: 0;
-    bottom: 0;
+    .title {
+      line-height: 40px;
+      padding: 0 10px 0 10px;
+    }
+
+    .content {
+      position: absolute;
+      left: 0;
+      top: 40px;
+      right: 0;
+      bottom: 0;
+    }
   }
 }
