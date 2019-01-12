@@ -12,7 +12,6 @@ class Connector extends ViewConnector {
         let list = connect(CommunicateService, current => {
             return current.list;
         }, (current, data) => {
-            console.log(data);
             current.list = data;
         });
         return {list};
