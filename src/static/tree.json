@@ -1,0 +1,100 @@
+[
+  {
+    "name": "zh-cn",
+    "id": "0",
+    "type": 0,
+    "list": [
+      {
+        "name": "index",
+        "id": "1",
+        "pageid": "test",
+        "type": 1,
+        "list": []
+      },
+      {
+        "name": "about",
+        "id": "2",
+        "pageid": "test",
+        "type": 1,
+        "list": []
+      },
+      {
+        "name": "news",
+        "id": "3",
+        "type": 0,
+        "list": [
+          {
+            "name": "aaa",
+            "id": "4",
+            "pageid": "test",
+            "type": 1,
+            "list": []
+          },
+          {
+            "name": "bbb",
+            "id": "5",
+            "pageid": "test",
+            "type": 1,
+            "list": []
+          },
+          {
+            "name": "ccc",
+            "id": "6",
+            "pageid": "test",
+            "type": 1,
+            "list": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "en-us",
+    "id": "7",
+    "type": 0,
+    "list": [
+      {
+        "name": "index",
+        "id": "8",
+        "pageid": "test",
+        "type": 1,
+        "list": []
+      },
+      {
+        "name": "about",
+        "id": "9",
+        "pageid": "test",
+        "type": 1,
+        "list": []
+      },
+      {
+        "name": "news",
+        "id": "10",
+        "type": 0,
+        "list": [
+          {
+            "name": "aaa",
+            "id": "11",
+            "pageid": "test",
+            "type": 1,
+            "list": []
+          },
+          {
+            "name": "bbb",
+            "id": "12",
+            "pageid": "test",
+            "type": 1,
+            "list": []
+          },
+          {
+            "name": "ccc",
+            "id": "13",
+            "pageid": "test",
+            "type": 1,
+            "list": []
+          }
+        ]
+      }
+    ]
+  }
+]

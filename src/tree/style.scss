@@ -1,0 +1,110 @@
+.simpletree {
+    font-size: 13px;
+    cursor: default;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 10px;
+    overflow: auto;
+    .icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        font-size: 14px;
+    }
+    .block {
+        .item {
+            > .head {
+                line-height: 25px;
+                > .arrow {
+                    width: 15px;
+                    height: 25px;
+                    text-align: center;
+                    display: inline-block;
+                    vertical-align: top;
+                    line-height: 22px;
+                }
+                > .noarrow {
+                    width: 15px;
+                    height: 25px;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                > .icon {
+                    display: inline-block;
+                    width: 25px;
+                    text-align: center;
+                    vertical-align: top;
+                }
+                > .name {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 0 5px 0 5px;
+                }
+                > .btns {
+                    display: none;
+                    vertical-align: top;
+                    .btn {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 25px;
+                        text-align: center;
+                        font-size: 15px;
+                        position: relative;
+                        .tip{
+                            position: absolute;
+                            top:100%;
+                            left:0;
+                          font-size: 12px;
+                          padding:0 5px 0 5px;
+                          line-height:18px;
+                          display: none;
+                          z-index: 9999999;
+                          background-color: rgba(37, 37, 37, 1);
+                          white-space: nowrap;
+                          color:white;
+                          border-radius: 3px;
+                          margin-left:-10px;
+                        }
+                      &:hover{
+                        .tip{
+                          display: block;
+                        }
+                      }
+                    }
+                }
+                &.active {
+                    > .name {
+                        background: #3D78A7;
+                        color: white;
+                        border-radius: 5px;
+                    }
+                    > .btns {
+                        display: inline-block;
+                    }
+                }
+            }
+            > .body {
+                margin-left: 17px;
+                display: none;
+            }
+            &.opened {
+                > .head {
+                    > .arrow {
+                        transform: rotate(90deg);
+                    }
+                }
+                > .body {
+                    display: block;
+                }
+            }
+        }
+    }
+}
