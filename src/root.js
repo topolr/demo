@@ -18,9 +18,9 @@ class Root extends StaticViewGroup {
         // this.addChild(Todo);
         // this.addChild(TimeTravel);
         // this.addChild(SSR);
-        // this.addChild(Reactive);
+        this.addChild(Reactive);
         // this.addChild(Communicate);
-        this.addChild(TreeContainer);
+        // this.addChild(TreeContainer);
     }
 }
 
